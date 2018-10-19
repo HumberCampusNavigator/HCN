@@ -34,7 +34,8 @@
         <activity
             android:name=".callSecurity"
             android:label="Call Security" />
-        <activity android:name=".showMap"></activity>
+        <activity android:name=".showMap"
+            android:label="Showing Directions"></activity>
     </application>
 
 </manifest>

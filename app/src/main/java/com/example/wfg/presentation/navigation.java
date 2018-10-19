@@ -10,6 +10,7 @@ public class navigation extends AppCompatActivity {
     private Button button;
     private Button button1;
     private Button button2;
+    private Button button3;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,7 +28,7 @@ public class navigation extends AppCompatActivity {
         });
 
         button1 = (Button) findViewById(R.id.washroom);
-        button.setOnClickListener(new View.OnClickListener() {
+        button1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent1 = new Intent(navigation.this, showMap.class);
@@ -36,11 +37,20 @@ public class navigation extends AppCompatActivity {
         });
 
         button2 = (Button) findViewById(R.id.foodpoint);
-        button.setOnClickListener(new View.OnClickListener() {
+        button2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent2 = new Intent(navigation.this, showMap.class);
                 startActivity(intent2);
+            }
+        });
+
+        button3 = (Button) findViewById(R.id.exitbutton);
+        button3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent3 = new Intent(navigation.this, HomePage.class);
+                startActivity(intent3);
             }
         });
     }
