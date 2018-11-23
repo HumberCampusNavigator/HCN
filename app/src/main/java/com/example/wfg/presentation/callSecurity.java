@@ -13,6 +13,7 @@ import android.Manifest;
 
 public class callSecurity extends AppCompatActivity {
     public Button emergency;
+    private Button button;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -26,6 +27,15 @@ public class callSecurity extends AppCompatActivity {
                 callIntent.setData(Uri.parse("tel:0123456789"));
                 startActivity(callIntent);
                 startActivity(callIntent);
+            }
+        });
+
+        button = (Button) findViewById(R.id.button3);
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(callSecurity.this, SensorInput.class);
+                startActivity(intent);
             }
         });
 

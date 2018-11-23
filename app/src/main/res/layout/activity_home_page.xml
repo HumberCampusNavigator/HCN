@@ -4,18 +4,16 @@ xmlns:app="http://schemas.android.com/apk/res-auto"
 xmlns:tools="http://schemas.android.com/tools"
 android:layout_width="match_parent"
 android:layout_height="match_parent"
-android:background="#2980b9"
+    android:background="#BDFFF3"
 tools:context=".MainActivity">
 
     <Button
         android:id="@+id/button"
-        android:layout_width="165dp"
-        android:layout_height="78dp"
-        android:layout_alignParentStart="true"
+        android:layout_width="197dp"
+        android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
-        android:layout_marginStart="88dp"
-        android:layout_marginTop="178dp"
-        android:background="@drawable/button_background"
+        android:layout_alignStart="@+id/CallSecurity"
+        android:layout_marginTop="185dp"
         android:text="@string/navigation" />
 
     <TextView
@@ -34,7 +32,6 @@ tools:context=".MainActivity">
         android:layout_alignParentStart="true"
         android:layout_marginBottom="95dp"
         android:layout_marginStart="118dp"
-        android:background="@drawable/button_background"
         android:text="@string/quit" />
 
     <Button
@@ -46,7 +43,6 @@ tools:context=".MainActivity">
         android:layout_alignParentStart="true"
         android:layout_marginBottom="212dp"
         android:layout_marginStart="74dp"
-        android:background="@drawable/button_background"
         android:text="@string/call_security" />
 
 </RelativeLayout>

@@ -7,6 +7,7 @@
         android:required="true" />
 
     <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -22,6 +23,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
         <activity
             android:name=".CameraActivity"
             android:label="@string/location1" />
@@ -34,8 +36,12 @@
         <activity
             android:name=".callSecurity"
             android:label="Call Security" />
-        <activity android:name=".showMap"
-            android:label="Showing Directions"></activity>
+        <activity
+            android:name=".showMap"
+            android:label="Showing Directions" />
+        <activity
+            android:name=".SensorInput"
+            android:label="Sensor Readings" />
     </application>
 
 </manifest>
